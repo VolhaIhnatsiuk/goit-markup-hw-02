@@ -25,6 +25,11 @@ body {
   background-color: var(--color-white);
 }
 
+/**
+  |============================
+  | Repetitive styles
+  |============================
+*/
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -43,6 +48,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -249,5 +255,4 @@ body {
 
 .project-card {
   background: var(--color-white);
-  border: 1px solid var(--border-color);
 }
