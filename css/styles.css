@@ -1,8 +1,8 @@
 :root {
   /* Text and backgrounds colors */
-  --primary-text-color: #2e2f42;
-  --secondary-text-color: #434455;
-  --accent-txtbtn-color: #4d5ae5;
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --logo-btn-color: #4d5ae5;
   --active-txtbtn-color: #404bbf;
   --color-white: #ffffff;
   --color-cloud: #f4f4fd;
@@ -37,8 +37,8 @@ body {
   line-height: 1.17;
   align-items: center;
   letter-spacing: 0.03em;
+  color: var(--logo-btn-color);
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .button {
@@ -59,7 +59,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .subsection-title {
@@ -67,14 +67,14 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .section-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 /**
@@ -90,31 +90,13 @@ body {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /**
   |============================
   | Header
   |============================
 */
-
 .header-logo {
-  color: var(--primary-text-color);
-}
-
-.logo-accent {
-  color: var(--accent-txtbtn-color);
+  color: var(--secondary-text-color);
 }
 
 .header-link {
@@ -122,8 +104,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .header-link:hover,
@@ -132,13 +113,15 @@ body {
   text-decoration: underline;
 }
 
-.contacts {
+.address {
   font-style: normal;
+}
+
+.contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  text-decoration: none;
+  color: inherit;
 }
 
 .contacts:hover,
@@ -151,9 +134,8 @@ body {
   | Hero section
   |============================
 */
-
 .hero {
-  background-color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
 }
 
 .hero-title {
@@ -167,7 +149,7 @@ body {
 
 .hero-button {
   color: var(--color-white);
-  background-color: var(--accent-txtbtn-color);
+  background-color: var(--logo-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -182,7 +164,18 @@ body {
   | Benefits section
   |============================
 */
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /**
   |============================
   | Work section
@@ -216,13 +209,10 @@ body {
 */
 
 .footer {
-  background-color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
 }
 
-.footer-logo {
-  color: var(--color-cloud);
-}
-
+.footer-logo,
 .footer-text {
   color: var(--color-cloud);
 }
@@ -234,7 +224,7 @@ body {
 */
 
 .portfolio-button {
-  color: var(--accent-txtbtn-color);
+  color: var(--logo-btn-color);
   background-color: var(--color-cloud);
   border: 1px solid var(--border-color);
 }
