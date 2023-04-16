@@ -1,4 +1,8 @@
 :root {
+  /* Fonts */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
   /* Text and backgrounds colors */
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
@@ -18,7 +22,7 @@
   |============================
 */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   color: var(--primary-text-color);
@@ -31,7 +35,7 @@ body {
   |============================
 */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -58,7 +62,6 @@ body {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--secondary-text-color);
 }
 
@@ -75,6 +78,19 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /**
@@ -164,23 +180,16 @@ body {
   | Benefits section
   |============================
 */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 /**
   |============================
   | Work section
   |============================
 */
+
+.work-title {
+  text-transform: capitalize;
+}
 
 /**
   |============================
@@ -190,6 +199,10 @@ body {
 
 .team {
   background-color: var(--color-cloud);
+}
+
+.team-title {
+  text-transform: capitalize;
 }
 
 .team-card {
